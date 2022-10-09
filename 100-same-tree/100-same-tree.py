@@ -14,7 +14,6 @@ class Solution:
                 ans.append(None)
                 return
             inorder_helper(root.left, ans)
-            
             inorder_helper(root.right, ans)
             ans.append(root.val)
             
