@@ -11,5 +11,5 @@ class Solution:
             else:
                 M[e[1]] = [e[0]]
         for val in M:
-            if len(M[val]) == len(edges):
+            if len(M[val])+1 == len(M):
                 return val
