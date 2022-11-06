@@ -10,8 +10,6 @@ class Solution:
                 M[e[1]].append(e[0])
             else:
                 M[e[1]] = [e[0]]
-        print(len(M))
-        print(M)
         for val in M:
             if len(M[val])+1 == len(M):
                 return val
